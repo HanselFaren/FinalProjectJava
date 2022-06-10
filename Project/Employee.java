@@ -28,7 +28,7 @@ class Employee_Add{
             if(fl.createNewFile()){
                 FileWriter Writing = new FileWriter("file"+emp.employee_id+".txt");
                 Writing.write("Employee ID:"+emp.employee_id+"\n"+"Employee Name     :"+emp.name+"\n"+
-                "Guardian's name   :\n"+emp.employee_father+"Employee Contact  :"+emp.employee_contact+
+                "Father's name     :"+emp.employee_father+"\n"+"Employee Contact  :"+emp.employee_contact+
                 "\n"+"Email Information :"+emp.email+"\n"+"Employee position :"+emp.position+"\n"+
                 "Employee Salary   :"+emp.employee_salary);
                 Writing.close();
@@ -60,7 +60,7 @@ class EmployeeDetail{
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter Employee's name       : ");
         name = sc.nextLine();
-        System.out.print("Enter Father's name       : ");
+        System.out.print("Enter Father's name         : ");
         employee_father = sc.nextLine();
         System.out.print("Enter Employee's ID         : ");
         employee_id = sc.nextLine();
