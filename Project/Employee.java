@@ -16,6 +16,34 @@ public class Employee{
     }
 }
 
+// Employee detail class
+class EmployeeDetail{
+    String name;
+    String email;
+    String position;
+    String employee_id;
+    String employee_salary;
+    String employee_contact;
+    String employee_father;
+    public void getInfo(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter Employee's name       : ");
+        name = sc.nextLine();
+        System.out.print("Enter Father's name         : ");
+        employee_father = sc.nextLine();
+        System.out.print("Enter Employee's ID         : ");
+        employee_id = sc.nextLine();
+        System.out.print("Enter Employee's Email ID   : ");
+        email = sc.nextLine();
+        System.out.print("Enter Employee's Position   : ");
+        position = sc.nextLine();
+        System.out.print("Enter Employee contact Info : ");
+        employee_contact = sc.nextLine();
+        System.out.print("Enter Employee's Salary     : ");
+        employee_salary = sc.nextLine();
+    }
+}
+
 // add Employee class
 class Employee_Add{
     public void CreateFile(){
@@ -44,34 +72,6 @@ class Employee_Add{
             }
         }
         catch(Exception e){System.out.println(e);}
-    }
-}
-
-// Employee detail class
-class EmployeeDetail{
-    String name;
-    String email;
-    String position;
-    String employee_id;
-    String employee_salary;
-    String employee_contact;
-    String employee_father;
-    public void getInfo(){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter Employee's name       : ");
-        name = sc.nextLine();
-        System.out.print("Enter Father's name         : ");
-        employee_father = sc.nextLine();
-        System.out.print("Enter Employee's ID         : ");
-        employee_id = sc.nextLine();
-        System.out.print("Enter Employee's Email ID   : ");
-        email = sc.nextLine();
-        System.out.print("Enter Employee's Position   : ");
-        position = sc.nextLine();
-        System.out.print("Enter Employee contact Info : ");
-        employee_contact = sc.nextLine();
-        System.out.print("Enter Employee's Salary     : ");
-        employee_salary = sc.nextLine();
     }
 }
 
