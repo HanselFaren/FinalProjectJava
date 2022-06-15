@@ -45,7 +45,7 @@ class EmployeeDetail{
 }
 
 // add Employee class
-class Employee_Add{
+class AddEmployee{
     public void CreateFile(){
         Scanner sc=new Scanner(System.in);
         
@@ -76,8 +76,8 @@ class Employee_Add{
 }
 
 // preview Employee class
-class Employee_Show{
-    public void viewFile(String s) throws Exception{
+class PreviewEmployee{
+    public void lookFile(String s) throws Exception{
         File file = new File("file"+s+".txt");
         Scanner sc = new Scanner(file);
 
@@ -89,8 +89,8 @@ class Employee_Show{
 }
 
 // delete Employee class
-class Employee_Remove{
-    public void removeFile(String ID){
+class RemoveEmployee{
+    public void deleteFile(String ID){
 
         File file = new File("file"+ID+".txt");
         if(file.exists())
@@ -106,7 +106,7 @@ class Employee_Remove{
 }
 
 // update Employee class
-class Employee_Update{
+class UpdateEmployee{
     public void updateFile(String s,String o,String n) throws IOException
     {
         File file = new File("file"+s+".txt");
@@ -125,7 +125,7 @@ class Employee_Update{
 
 // Exit program class
 class CodeExit{
-    public void out(){
+    public void quit(){
     System.out.println("\n*****************************************");
     System.out.println("Thanks for Using us");
     System.out.println("*****************************************");

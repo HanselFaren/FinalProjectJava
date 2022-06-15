@@ -7,7 +7,7 @@ public class Driver extends Employee{
         System.out.print("\033[H\033[2J"); //clear the screen
 
         Scanner sc=new Scanner(System.in);
-        Employee_Show preview =new Employee_Show();
+        PreviewEmployee preview =new PreviewEmployee(); // calling the preview class
 
         int i=0;
 
@@ -23,7 +23,7 @@ public class Driver extends Employee{
             switch(i){ // to switch statements
                 case 1:
                 {
-                    Employee_Add ep =new Employee_Add(); // calling the create class function and run the function
+                    AddEmployee ep =new AddEmployee(); // calling the create class function and run the function
                     ep.CreateFile();
 
                     System.out.print("\033[H\033[2J");
@@ -36,7 +36,7 @@ public class Driver extends Employee{
                     String s=sc.nextLine();
                     try
                     {
-                        preview.viewFile(s);}
+                        preview.lookFile(s);}
                         catch(Exception e){System.out.println(e);}
 
                         System.out.print("\nEnter to Continue...");
@@ -50,8 +50,8 @@ public class Driver extends Employee{
                 {
                     System.out.print("\nEnter Employee's ID :");
                     String s=sc.nextLine();
-                    Employee_Remove remove =new Employee_Remove();
-                    remove.removeFile(s);
+                    RemoveEmployee remove =new RemoveEmployee();
+                    remove.deleteFile(s);
      
                     System.out.print("\nEnter to Continue...");
                     sc.nextLine();
@@ -65,15 +65,14 @@ public class Driver extends Employee{
                     String I=sc.nextLine();
                     try
                     {
-                        preview.viewFile(I);
+                        preview.lookFile(I);
                     }
                     catch(Exception e)
                     {
                         System.out.println(e);
                     }
-                    Employee_Update update = new Employee_Update();
-                    System.out.print("Enter the detail you want to Update :");
-                    System.out.print("\nExample :\n");
+                    UpdateEmployee update = new UpdateEmployee();
+                    System.out.print("\nInstructions:\n");
                     System.out.println("If you want to change the name, input the current name then enter. After that, input the name then press enter.\n");
                     String s=sc.nextLine();
                     System.out.print("Enter the Updated Info :");
@@ -96,7 +95,7 @@ public class Driver extends Employee{
                 case 5:
                 {
                     CodeExit obj = new CodeExit();
-                    obj.out();
+                    obj.quit();
                 }
             }
         }
