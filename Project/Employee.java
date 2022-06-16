@@ -5,12 +5,10 @@ import java.io.*;
 // menu class
 public class Employee{
     public void menu(){
-        System.out.println("\t\t*******************************************");
-        System.out.println("\t\t\t  EMPLOYEE MANAGEMENT SYSTEM");
-        System.out.println("\t\t*******************************************");
-        System.out.println("\n\nPress 1 : Add Employee");
-        System.out.println("Press 2 : Employee Details ");
-        System.out.println("Press 3 : Remove an Employee");
+        System.out.println("Employee System");
+        System.out.println("Press 1 : Add Employee");
+        System.out.println("Press 2 : Employee Info ");
+        System.out.println("Press 3 : Delete an Employee");
         System.out.println("Press 4 : Update Employee");
         System.out.println("Press 5 : Quit");
     }
